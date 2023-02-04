@@ -12,6 +12,6 @@ HTML5, CSS3, JavaScript.
 
 <h3>Demo</h3>
 
-https://nce.netlify.app/
+https://bfe-mega.netlify.app/
 
 <img src="https://i.imgur.com/Lw7VIFJ.png" alt="mega menu overview"/>
