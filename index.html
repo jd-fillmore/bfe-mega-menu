@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFE Mega Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Nav Styles-->
+    <link rel="stylesheet" href="scss/style.css" />
+    <!--Bootstrap-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Navigation-->
+    <div class="nav-bg">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <a class="navbar-brand" href="/"
+            ><img
+              src="https://www.battlefieldequipment.ca/img/battlefield-logo-160.png"
+              alt="Battlefield Equipment Rentals"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  tabindex="0"
+                  class="nav-link menu-item-has-children"
+                  href="/rental"
+                  >Rental Equipment <span class="sr-only">(current)</span></a
+                >
+                <!--Rental Equipment-->
+                <div class="drop-down mega-menu" id="rental-equip">
+                  <div class="container">
+                    <div class="card">
+                      <!-- <div class="row">
+                        <div class="col-md-12">
+                          <a class="close" href="#">Close</a>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <!--InsideTRAC Col-->
+                        <div class="col-md-3">
+                          <a
+                            href="https://www.battlefieldequipment.ca/insidetrac"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-insidetrac.jpg"
+                              alt="InsideTRAC"
+                            />
+                          </a>
+                          <p id="insidetrac">
+                            InsideTRAC is your single-source solution to manage
+                            all your equipment rentals.
+                          </p>
+                          <div class="d-flex">
+                            <a
+                              target="_blank"
+                              href="https://apps.apple.com/ca/app/insidetrac/id1207855373"
+                            >
+                              <img
+                                class="img-fluid icon first"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-apple.jpg"
+                                alt="Download from Apple Store"
+                              />
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://play.google.com/store/apps/details?id=com.toromont.okra&hl=en_CA&gl=US"
+                            >
+                              <img
+                                class="img-fluid icon"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-g-play.jpg"
+                                alt="Download from Google Play"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <!--Rental Equipment Col-->
+                        <div class="col-md-5">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>Rental Equipment</h1>
+                            </div>
+                          </div>
+                          <div class="d-flex">
+                            <ul>
+                              <a href="/rental/rental-equipment/air-compressors"
+                                ><li>Air Compressors</li></a
+                              >
+                              <a href="/rental/rental-equipment/air-tools"
+                                ><li>Air Tools</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/compaction-equipment"
+                                ><li>Compaction Equipment</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/concrete-equipment"
+                                ><li>Concrete Equipment</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/construction-heaters"
+                                ><li>Construction Heaters</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/earth-moving-equipment"
+                                ><li>Earth Moving Equipment</li></a
+                              >
+                              <a href="/rental/rental-equipment/electric-tools"
+                                ><li>Electric Tools</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/elevated-work-platforms"
+                                ><li>Elevated Work Platforms</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/fans-vacuums-dehumidifiers"
+                                ><li>Fans, Vacuums & Dehumidifiers</li></a
+                              >
+                              <a href="/rental/rental-equipment/flooring-tools"
+                                ><li>Flooring Tools</li></a
+                              >
+                            </ul>
+                            <ul>
+                              <a
+                                href="/rental/rental-equipment/generators-portable-lighting"
+                                ><li>Generators & Portable Lighting</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/homeowner-equipment"
+                                ><li>Homeowner Equipment</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/landscaping-equipment-supplies"
+                                ><li>Landscaping Equipment & Supplies</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/laser-levels-auto-levels-theodolites"
+                                ><li>Laser & Auto Levels, Theodolites</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/material-handling-equipment"
+                                ><li>Material Handling Equipment</li></a
+                              >
+                              <a href="/rental/rental-equipment/miscellaneous"
+                                ><li>Miscellaneous</li></a
+                              >
+                              <a href="/rental/rental-equipment/pumps"
+                                ><li>Pumps</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/scaffold-ladders-fencing"
+                                ><li>Scaffolds, Ladders, Fencing</li></a
+                              >
+                              <a
+                                href="/rental/rental-equipment/traffic-control-safety"
+                                ><li>Traffic Control & Safety</li></a
+                              >
+                              <a href="/rental/rental-equipment/welders"
+                                ><li>Welders</li></a
+                              >
+                            </ul>
+                          </div>
+                        </div>
+                        <!--Other Col-->
+                        <div class="col-md-4 other">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>Other</h1>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <a href="/rental/construction-fence"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-const-fence.jpg"
+                                  alt="Construction Fence"
+                                />
+                              </a>
+                              <a href="/rental/construction-fence"
+                                >Construction Fence</a
+                              >
+                            </div>
+                            <div class="col-md-6">
+                              <a href="/rental/complete-winter-solutions"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-com-win-sol.jpg"
+                                  alt="Complete Winter Solutions"
+                              /></a>
+                              <a href="/rental/complete-winter-solutions"
+                                >Complete Winter Solutions</a
+                              >
+                            </div>
+                          </div>
+                          <div class="row pd-top-20">
+                            <div class="col-md-6">
+                              <a href="/rental/rental-safety"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-ren-safe.jpg"
+                                  alt="Rental Safety"
+                              /></a>
+                              <a href="/rental/rental-safety">Rental Safety</a>
+                            </div>
+                            <div class="col-md-6">
+                              <a href="/rental/reasons-to-rent">
+                                <img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-reasons-to-rent.jpg"
+                                  alt="Reasons To Rent"
+                                />
+                              </a>
+                              <a href="/rental/reasons-to-rent"
+                                >Reasons To Rent</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  tabindex="0"
+                  class="nav-link menu-item-has-children"
+                  href="/caterpillar-compact-equipment"
+                  >New Cat Equipment</a
+                >
+                <!--New Cat Equipment-->
+                <div class="drop-down mega-menu" id="new-cat-equip">
+                  <div class="container">
+                    <div class="card">
+                      <!-- <div class="row">
+                        <div class="col-md-12">
+                          <a class="close" href="#">Close</a>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <!--InsideTRAC Col-->
+                        <div class="col-md-3">
+                          <a
+                            href="https://www.battlefieldequipment.ca/insidetrac"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-insidetrac.jpg"
+                              alt="InsideTRAC"
+                            />
+                          </a>
+                          <p id="insidetrac">
+                            InsideTRAC is your single-source solution to manage
+                            all your equipment rentals.
+                          </p>
+                          <div class="d-flex">
+                            <a
+                              target="_blank"
+                              href="https://apps.apple.com/ca/app/insidetrac/id1207855373"
+                            >
+                              <img
+                                class="img-fluid icon first"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-apple.jpg"
+                                alt="Download from Apple Store"
+                              />
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://play.google.com/store/apps/details?id=com.toromont.okra&hl=en_CA&gl=US"
+                            >
+                              <img
+                                class="img-fluid icon"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-g-play.jpg"
+                                alt="Download from Google Play"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <!--New Cat Equipment Col-->
+                        <div class="col-md-5">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>New Cat Equipment</h1>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <a
+                                href="/new-cat-equipment/406-equipment/477-skid-steer-and-compact-track-loaders"
+                              >
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="machine"
+                                    src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-skid-steer.jpg"
+                                    width="100"
+                                    alt="Cat Skid Steer & Compact Track Loaders"
+                                  />
+                                  <a
+                                    href="/new-cat-equipment/406-equipment/477-skid-steer-and-compact-track-loaders"
+                                    >Cat Skid Steer & Compact Track Loaders</a
+                                  >
+                                </div>
+                              </a>
+                              <a
+                                href="/new-cat-equipment/406-equipment/464-excavators"
+                              >
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="machine"
+                                    src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-mini-ex.jpg"
+                                    width="100"
+                                    alt="Cat Mini Hydraulic Excavators"
+                                  />
+                                  <a
+                                    href="/new-cat-equipment/406-equipment/464-excavators"
+                                    >Cat Mini Hydraulic Excavators</a
+                                  >
+                                </div>
+                              </a>
+                              <a
+                                href="/new-cat-equipment/406-equipment/483-wheel-loaders"
+                              >
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="machine"
+                                    src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-compact.jpg"
+                                    width="100"
+                                    alt="Cat Compact Wheel Loaders"
+                                  />
+                                  <a
+                                    href="/new-cat-equipment/406-equipment/483-wheel-loaders"
+                                    >Cat Compact Wheel Loaders</a
+                                  >
+                                </div>
+                              </a>
+                              <a
+                                href="/new-cat-equipment/406-equipment/480-telehandlers"
+                              >
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="machine"
+                                    src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-tele.jpg"
+                                    width="100"
+                                    alt="Cat Telehandlers"
+                                  />
+                                  <a
+                                    href="/new-cat-equipment/406-equipment/480-telehandlers"
+                                    >Cat Telehandlers</a
+                                  >
+                                </div>
+                              </a>
+                              <a href="/cat-compact-equipment#!/class/405">
+                                <div class="d-flex align-items-center">
+                                  <img
+                                    class="machine"
+                                    src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-work-tools.jpg"
+                                    width="100"
+                                    alt="Cat Work Tools"
+                                  />
+                                  <a href="/cat-compact-equipment#!/class/405"
+                                    >Cat Work Tools</a
+                                  >
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Other Col-->
+                        <div class="col-md-4 other">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>Other</h1>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <a href="https://parts.cat.com/en/catcorp"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-buy-cat.jpg"
+                                  alt="Buy Cat Parts Online"
+                                />
+                              </a>
+                              <a href="https://parts.cat.com/en/catcorp"
+                                >Buy Cat Parts Online</a
+                              >
+                            </div>
+                            <div class="col-md-6">
+                              <a href="/parts-service/cat-card/"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-cat-card.jpg"
+                                  alt="Cat Card"
+                              /></a>
+                              <a href="/parts-service/cat-card/">Cat Card</a>
+                            </div>
+                          </div>
+                          <div class="row pd-top-20">
+                            <div class="col-md-6">
+                              <a
+                                href="/caterpillar-compact-equipment/cat-customer-value-agreements"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-cva.jpg"
+                                  alt="Cat Customer Value Agreements (CVA)"
+                              /></a>
+                              <a
+                                href="/caterpillar-compact-equipment/cat-customer-value-agreements"
+                                >Cat Customer Value Agreements (CVA)</a
+                              >
+                            </div>
+                            <div class="col-md-6">&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link menu-item-has-children"
+                  href="/used-equipment"
+                  >Used Equipment</a
+                >
+                <!--Used Equipment-->
+                <div class="drop-down mega-menu" id="used-equip">
+                  <div class="container">
+                    <div class="card">
+                      <!-- <div class="row">
+                        <div class="col-md-12">
+                          <a class="close" href="#">Close</a>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <!--InsideTRAC Col-->
+                        <div class="col-md-3">
+                          <a
+                            href="https://www.battlefieldequipment.ca/insidetrac"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-insidetrac.jpg"
+                              alt="InsideTRAC"
+                            />
+                          </a>
+                          <p id="insidetrac">
+                            InsideTRAC is your single-source solution to manage
+                            all your equipment rentals.
+                          </p>
+                          <div class="d-flex">
+                            <a
+                              target="_blank"
+                              href="https://apps.apple.com/ca/app/insidetrac/id1207855373"
+                            >
+                              <img
+                                class="img-fluid icon first"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-apple.jpg"
+                                alt="Download from Apple Store"
+                              />
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://play.google.com/store/apps/details?id=com.toromont.okra&hl=en_CA&gl=US"
+                            >
+                              <img
+                                class="img-fluid icon"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-g-play.jpg"
+                                alt="Download from Google Play"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <!--Used Equipment Col-->
+                        <div class="col-md-9">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>Used Equipment</h1>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <!--Images-->
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <a
+                                    href="https://usedrental.battlefieldequipment.ca/en/"
+                                  >
+                                    <img
+                                      class="border-yellow used-thumb"
+                                      src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-rental-fleet.jpg"
+                                      alt="Rental Fleet Sell Off"
+                                    />
+                                  </a>
+                                  <br />
+                                  <a
+                                    href="https://usedrental.battlefieldequipment.ca/en/"
+                                    >Rental Fleet Sell-Off</a
+                                  >
+                                </div>
+                                <div class="col-md-4">
+                                  <a
+                                    href="https://used.battlefieldequipment.ca/en/"
+                                  >
+                                    <img
+                                      class="border-yellow used-thumb"
+                                      src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-used.jpg"
+                                      alt="Cat Certified Used Equipment"
+                                    />
+                                  </a>
+                                  <br />
+                                  <a
+                                    href="https://used.battlefieldequipment.ca/en/"
+                                    >Cat Certified Used Equipment</a
+                                  >
+                                </div>
+                                <div class="col-md-4">
+                                  <a
+                                    href="/used-equipment/work-tool-bargain-list"
+                                  >
+                                    <img
+                                      class="border-yellow used-thumb"
+                                      src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-wtbl.jpg"
+                                      alt="Cat Work Tool Bargain List"
+                                    />
+                                  </a>
+                                  <br />
+                                  <a
+                                    href="/used-equipment/work-tool-bargain-list"
+                                    >Cat Work Tool Bargain List</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item-has-children" href="/parts-service"
+                  >Parts &amp; Service</a
+                >
+                <!--Parts & Services-->
+                <div class="drop-down mega-menu" id="parts-services">
+                  <div class="container">
+                    <div class="card">
+                      <!-- <div class="row">
+                        <div class="col-md-12">
+                          <a class="close" href="#">Close</a>
+                        </div>
+                      </div> -->
+                      <div class="row">
+                        <!--InsideTRAC Col-->
+                        <div class="col-md-3">
+                          <a
+                            href="https://www.battlefieldequipment.ca/insidetrac"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-insidetrac.jpg"
+                              alt="InsideTRAC"
+                            />
+                          </a>
+                          <p id="insidetrac">
+                            InsideTRAC is your single-source solution to manage
+                            all your equipment rentals.
+                          </p>
+                          <div class="d-flex">
+                            <a
+                              target="_blank"
+                              href="https://apps.apple.com/ca/app/insidetrac/id1207855373"
+                            >
+                              <img
+                                class="img-fluid icon first"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-apple.jpg"
+                                alt="Download from Apple Store"
+                              />
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://play.google.com/store/apps/details?id=com.toromont.okra&hl=en_CA&gl=US"
+                            >
+                              <img
+                                class="img-fluid icon"
+                                src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-g-play.jpg"
+                                alt="Download from Google Play"
+                              />
+                            </a>
+                          </div>
+                        </div>
+                        <!--Parts & Services Col-->
+                        <div class="col-md-5">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>Parts & Service</h1>
+                            </div>
+                          </div>
+                          <div class="row text-center">
+                            <div class="col-md-6">
+                              <a href="/parts-service/parts">
+                                <img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-parts.jpg"
+                                  alt="Parts"
+                                />
+                              </a>
+                              <a href="/parts-service/parts">Parts</a>
+                            </div>
+                            <div class="col-md-6">
+                              <a href="/parts-service/service">
+                                <img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-service.jpg"
+                                  alt="Parts"
+                                />
+                              </a>
+                              <a href="/parts-service/service">Service</a>
+                            </div>
+                          </div>
+                        </div>
+                        <!--Other Col-->
+                        <div class="col-md-4 other">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h1>Other</h1>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <a href="/parts-service/cat-hydraulic-hose"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-cat-hose.jpg"
+                                  alt="Cat Hydraulic Hose"
+                                />
+                              </a>
+                              <a href="/parts-service/cat-hydraulic-hose"
+                                >Cat Hydraulic Hose</a
+                              >
+                            </div>
+                            <div class="col-md-6">
+                              <a href="/parts-service/cat-card"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-cat-card.jpg"
+                                  alt="Cat Card"
+                              /></a>
+                              <a href="/parts-service/cat-card">Cat Card</a>
+                            </div>
+                          </div>
+                          <div class="row pd-top-20">
+                            <div class="col-md-6">
+                              <a
+                                href="/caterpillar-compact-equipment/cat-customer-value-agreements"
+                                ><img
+                                  class="img-fluid"
+                                  src="https://ajx6ymlqwk3d.s3.ca-central-1.amazonaws.com/mega-menu-cva.jpg"
+                                  alt="Cat Customer Value Agreements (CVA)"
+                              /></a>
+                              <a
+                                href="/caterpillar-compact-equipment/cat-customer-value-agreements"
+                                >Cat Customer Value Agreements (CVA)</a
+                              >
+                            </div>
+                            <div class="col-md-6">&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="promotions" href="/promotions"
+                  >Promotions</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="search-icon"
+                  ><i class="fas fa-search"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!--Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

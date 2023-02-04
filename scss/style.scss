@@ -1,0 +1,263 @@
+// Variables
+$heading: #333;
+$white: #fff;
+$black: #000;
+$red: #af0e0e;
+$yellow: #ffc82c;
+$grey: #f2f1f1;
+$fade-grey: #9f9f9f;
+
+// Leave this for Battlefield site
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+h2 {
+  line-height: initial !important;
+}
+
+// Breakpoints
+// 1200px
+@mixin bp-desktop {
+  @media only screen and (max-width: 75em) {
+    @content;
+  }
+}
+
+// 1024px
+@mixin bp-tablet {
+  @media only screen and (max-width: 64em) {
+    @content;
+  }
+}
+
+// 992px
+@mixin bp-tablet-sm {
+  @media only screen and (max-width: 62em) {
+    @content;
+  }
+}
+
+// 768px
+@mixin bp-mobile {
+  @media only screen and (max-width: 48em) {
+    @content;
+  }
+}
+
+// 576px
+@mixin bp-mobile-sm {
+  @media only screen and (max-width: 36em) {
+    @content;
+  }
+}
+
+// Container
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1170px !important;
+  }
+}
+
+// Navbar
+.nav-bg {
+  background: $red;
+  @include bp-mobile {
+    display: none;
+  }
+}
+nav {
+  &.navbar {
+    padding: 0.05rem 0.05rem;
+    a {
+      font-family: "Montserrat", sans-serif !important;
+    }
+  }
+  a {
+    &.nav-link {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-bottom: 2px solid rgba(0, 0, 0, 0);
+      color: $white;
+      &:hover {
+        color: $white;
+        border-bottom: 2px solid $yellow;
+      }
+      @media (min-width: 992px) {
+        padding-left: 0.7rem !important;
+        padding-right: 0.7rem !important;
+      }
+    }
+    &.close {
+      font-size: 13px !important;
+    }
+  }
+  i {
+    &.fa-search {
+      font-size: 20px;
+    }
+  }
+  .navbar-nav {
+    align-items: center;
+  }
+  // Mega Menu
+  .mega-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    .border-yellow {
+      border: 1px solid $yellow;
+    }
+    .card {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+      border-radius: 0px;
+      border: none;
+      padding: 30px 30px 20px 30px;
+      .pd-top-20 {
+        padding-top: 20px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      ul {
+        font-family: "Montserrat", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: bold !important;
+        line-height: initial;
+        color: $heading;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      a {
+        color: $red;
+        font-size: 13px;
+      }
+      ul {
+        list-style: none;
+        padding-inline-start: 0px;
+        line-height: 2;
+      }
+      img {
+        &.icon {
+          width: 90%;
+        }
+        &.first {
+          margin-right: 5px;
+        }
+      }
+      p {
+        &#insidetrac {
+          margin-top: 10px;
+          font-size: 12px;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+  #rental-equip,
+  #new-cat-equip,
+  #used-equip,
+  #parts-services {
+    margin-top: 14px;
+  }
+  #rental-equip,
+  #new-cat-equip,
+  #parts-services {
+    .other {
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+  // Rental Equipment
+  #rental-equip {
+    // large screen by default
+    margin-left: -316px;
+    @include bp-desktop {
+      margin-left: -191px;
+    }
+    @include bp-tablet {
+      margin-left: -190px;
+    }
+  }
+  // New Cat Equipment
+  #new-cat-equip {
+    margin-left: -490px;
+    @include bp-desktop {
+      margin-left: -341px;
+    }
+    @include bp-tablet {
+      margin-left: -296px;
+    }
+    a {
+      font-size: 14px;
+    }
+    img {
+      &.machine {
+        margin-right: 5px;
+      }
+    }
+    .other {
+      img {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  // Used Equipment
+  #used-equip {
+    margin-left: -676px;
+    @include bp-desktop {
+      margin-left: -502px;
+    }
+    @include bp-tablet {
+      margin-left: -401px;
+    }
+    img {
+      &.used-thumb {
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+  }
+  // Parts & Services
+  #parts-services {
+    margin-left: -833px;
+    @include bp-desktop {
+      margin-left: -638px;
+    }
+    @include bp-tablet {
+      margin-left: -507px;
+    }
+  }
+}
+
+.display-on {
+  display: block !important;
+}

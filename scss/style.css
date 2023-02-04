@@ -1,0 +1,256 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+h2 {
+  line-height: initial !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px !important;
+  }
+}
+
+.nav-bg {
+  background: #af0e0e;
+}
+
+@media only screen and (max-width: 48em) {
+  .nav-bg {
+    display: none;
+  }
+}
+
+nav.navbar {
+  padding: 0.05rem 0.05rem;
+}
+
+nav.navbar a {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+nav a.nav-link {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+nav a.nav-link:hover {
+  color: #fff;
+  border-bottom: 2px solid #ffc82c;
+}
+
+@media (min-width: 992px) {
+  nav a.nav-link {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+  }
+}
+
+nav a.close {
+  font-size: 13px !important;
+}
+
+nav i.fa-search {
+  font-size: 20px;
+}
+
+nav .navbar-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .mega-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+nav .mega-menu .border-yellow {
+  border: 1px solid #ffc82c;
+}
+
+nav .mega-menu .card {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 0px;
+  border: none;
+  padding: 30px 30px 20px 30px;
+}
+
+nav .mega-menu .card .pd-top-20 {
+  padding-top: 20px;
+}
+
+nav .mega-menu .card h1,
+nav .mega-menu .card h2,
+nav .mega-menu .card h3,
+nav .mega-menu .card h4,
+nav .mega-menu .card h5,
+nav .mega-menu .card h6,
+nav .mega-menu .card p,
+nav .mega-menu .card a,
+nav .mega-menu .card ul {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav .mega-menu .card h1,
+nav .mega-menu .card h2,
+nav .mega-menu .card h3,
+nav .mega-menu .card h4,
+nav .mega-menu .card h5,
+nav .mega-menu .card h6 {
+  font-weight: bold !important;
+  line-height: initial;
+  color: #333;
+}
+
+nav .mega-menu .card h1 {
+  font-size: 22px;
+}
+
+nav .mega-menu .card a {
+  color: #af0e0e;
+  font-size: 13px;
+}
+
+nav .mega-menu .card ul {
+  list-style: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  line-height: 2;
+}
+
+nav .mega-menu .card img.icon {
+  width: 90%;
+}
+
+nav .mega-menu .card img.first {
+  margin-right: 5px;
+}
+
+nav .mega-menu .card p#insidetrac {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+nav #rental-equip,
+nav #new-cat-equip,
+nav #used-equip,
+nav #parts-services {
+  margin-top: 14px;
+}
+
+nav #rental-equip .other a,
+nav #new-cat-equip .other a,
+nav #parts-services .other a {
+  font-size: 11px;
+}
+
+nav #rental-equip {
+  margin-left: -316px;
+}
+
+@media only screen and (max-width: 75em) {
+  nav #rental-equip {
+    margin-left: -191px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  nav #rental-equip {
+    margin-left: -190px;
+  }
+}
+
+nav #new-cat-equip {
+  margin-left: -490px;
+}
+
+@media only screen and (max-width: 75em) {
+  nav #new-cat-equip {
+    margin-left: -341px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  nav #new-cat-equip {
+    margin-left: -296px;
+  }
+}
+
+nav #new-cat-equip a {
+  font-size: 14px;
+}
+
+nav #new-cat-equip img.machine {
+  margin-right: 5px;
+}
+
+nav #new-cat-equip .other img {
+  margin-bottom: 5px;
+}
+
+nav #used-equip {
+  margin-left: -676px;
+}
+
+@media only screen and (max-width: 75em) {
+  nav #used-equip {
+    margin-left: -502px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  nav #used-equip {
+    margin-left: -401px;
+  }
+}
+
+nav #used-equip img.used-thumb {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+nav #parts-services {
+  margin-left: -833px;
+}
+
+@media only screen and (max-width: 75em) {
+  nav #parts-services {
+    margin-left: -638px;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  nav #parts-services {
+    margin-left: -507px;
+  }
+}
+
+.display-on {
+  display: block !important;
+}
+/*# sourceMappingURL=style.css.map */
